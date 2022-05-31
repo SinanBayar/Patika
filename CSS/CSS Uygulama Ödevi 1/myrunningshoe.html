@@ -16,8 +16,16 @@
             <img src="https://productimages.hepsiburada.net/s/54/375/11195266334770.jpg" height="100" alt="Asics Logo">
             <img src="https://www.coolshoes.com/uploads/1/0/7/5/107516375/hoka-logo_orig.png" height="100" alt="Hoka Logo">
         </div>
+
+        <!-- Site ismi ve ana başlık -->
+        <div style="text-align:center;">
+        <h1 style="color:blue; font-size:30px;">MYRUNNINGSHOE</h1>
+        <!-- Arama Motoru -->
+        <input type="text" placeholder="Anahtar Kelimeyi Giriniz">
+        <input type="submit" name="" id="" value="Arama">
+        </div>
         
-        <!-- Çoktan seçmeli başklar lazım -->
+        <!-- Diğer Sayfalar -->
         <div style="text-align:right;">
             <a href="myrunningshoe.html">ANASAYFA</a>
             <a href="reviews.html">REVIEWS</a>
@@ -25,9 +33,6 @@
             <a href="training.html">TRAINING</a>
             <a href="quiz.html">QUIZ</a>
         </div>
-        
-
-        <!-- En solda da bir adet arama motoru lazım -->
 
         <!-- Kullanıcı giriş alanı lazım -->
         <!-- Burada fieldset etiketi ile alanın dış çizgilerini belirlerken legend ile bu çizili alanın ismini belirliyor ve görselde de gösteriyoruz. Bu alanın içinde ise form ile etiketimizi açıp, label etiketi ile kullanıcı ismi şifre gibi doldurulacak text bilgisi isimlerini ayarlarken, input ile bu textin kendisini yaratıyoruz. En son olarak da input etiketini submit özelliği ile kullanıyor ve value'yi belirlediğimiz isimde submit tuşunu oluşturmuş oluyoruz. İsteseydik input etiketi özelliklerine valueler belirleyebilir ve böylece text yazılacak alanı boş gözükmez belirlediğimiz ifadenin silinebilir hali ile dolu olarak gözükürdü. -->
@@ -45,84 +50,57 @@
     </nav>
     <main>
         <section>
-            <article>
-                <ol>
-                    <li><p>Aşağıdaki ayakkabılardan hangisini arazi koşullarında kullanmak için tercih edersiniz?</p>
-                        <form>
-                            <input type="radio" id="shoe1" name="arazi" value="Nike Zoom Fly Flyknit">
-                            <label for="shoe1">Nike Zoom Fly Flyknit</label><br>
-                            <input type="radio" id="shoe2" name="arazi" value="Hoka One One Speedgoat 4">
-                            <label for="shoe2">Hoka One One Speedgoat 4</label><br>
-                            <input type="radio" id="shoe3" name="arazi" value="Adidas Adizero Boston">
-                            <label for="shoe3">Adidas Adizero Boston</label><br>
-                            <input type="radio" id="shoe4" name="arazi" value="Asic Jel Nimbus 24">
-                            <label for="shoe4">Asic Jel Nimbus 24</label><br>
-                        </form>
-                        <br>
-                    </li>
-                            <!-- Burada input type ile çoktan çoktan seçmeli(radio), metin yazmalı(text), kutucuk tiklemeli(checkbox), tuşa basmalı(button) veya onaylamalı(submit) olmak üzere hangi seçeneği kullanacağımızı seçiyoruz. Daha sonra her şık için bir id ismi belirleyip, ona ait label etiketinde de bu id yi kullanıyoruz. Ayrıca çoktan seçmeli sistemde aynı anda tüm şıklardan sadece birinin seçilebilmesi için input etiketlerine ortak bir name kullanmamız gerekiyor. Yoksa aynı anda tüm şıklar seçilebiliniyor. -->
-                    <li><p>Koşu ayakkabılarınızı ne kadar kilometre kullandıktan sonra emekliye ayırıyorsunuz?</p>
-                        <form>
-                            <input type="radio" name="kilometre" id="600">
-                            <label for="600">600 km</label>
-                            <input type="radio" name="kilometre" id="800">
-                            <label for="800">800 km</label>
-                            <input type="radio" name="kilometre" id="1000">
-                            <label for="1000">1000 km</label>
-                            <input type="radio" name="kilometre" id="1200">
-                            <label for="1299">1200 km</label>
-                        </form>
-                        <br>
-                    </li>
-                    <li><p>Aşağıdaki yarış organizasyonlarından daha önce katılmış olduklarınızı işaretleyiniz.</p>
-                        <form>
-                            <input type="checkbox" name="race" id="race1">
-                            <label for="race1">Antalya Maratonu</label><br>
-                            <input type="checkbox" name="race" id="race2">
-                            <label for="race2">İstanbul Maratonu</label><br>
-                            <input type="checkbox" name="race" id="race3">
-                            <label for="race3">İzmir Maratonu</label><br>
-                            <input type="checkbox" name="race" id="race4">
-                            <label for="race4">Kapadokya Short Trail</label><br>
-                            <input type="checkbox" name="race" id="race5">
-                            <label for="race15">Skyrun Aladağlar</label><br>
-                        </form>
-                        <br>
-                    </li>
-                    <br>
-                        <a href="https://www.nike.com/tr" target="_blank"><button>Nike</button></a>
-                        <a href="https://www.adidas.com.tr/tr" target="_blank"><button>Adidas</button></a>
-                        <a href="https://www.google.com.tr" target="_blank"><button>Asics</button></a>
-                        <a href="https://www.hoka.com/en/us/" target="_blank"><button>Hoke One One</button></a>
-                    <br>
-                    <li><p>Yukarıdaki butonlara tıkladığınızda, buton üzerindeki markanın internet sitesine yönlendirilmektesiniz. seçeneklerden hangisinde butonun yönlendirdiği internet sitesi doğru verilmemiştir?</p>
-                    <form>
-                        <input type="radio" name="marka" id="marka1">
-                        <label for="marka1">Nike ve Adidas</label><br>
-                        <input type="radio" name="marka" id="marka2">
-                        <label for="marka2">Nike ve Asics</label><br>
-                        <input type="radio" name="marka" id="marka3">
-                        <label for="marka3">Yalnızca Nike</label><br>
-                        <input type="radio" name="marka" id="marka4">
-                        <label for="marka4">Yalnızca Asics</label><br>
-                    </form>
-                    </li>
-                    <li><p>Maraton koşmak için sizi motive eden etkenlerden kısaca bahsediniz.</p>
-                        <form>
-                            <textarea name="" id="" cols="40" rows="12">Maraton koşmak istiyorum. Çünkü...</textarea>
-                            <input type="submit" value="Gönder">
-                        </form>
-
-                    </li>
-                    </ol>
+            <figure name="Genel Fotoğraf">
+                <img src="https://nypost.com/wp-content/uploads/sites/2/2019/04/boston_marathon.jpg?quality=75&strip=all" alt="Maraton Ayakkabıları" usemap="#marathonshoe" height="600">
+                <map name="marathonshoe">
+                    <area shape="" coords="" href="" alt="" title="">
+                    <area shape="" coords="" href="" alt="">
+                    <area shape="" coords="" href="" alt="">
+                    <area shape="" coords="" href="" alt="">
+                </map>
+            </figure>
+            <article name="Konu 1">
+                <h2>En İyi Uzun Mesafe Koşusu Ayakkabısı Hangisidir?</h2>
+                <p>Yüksek kilometre koşucuları ayakkabılarından çok şey ister. Affedilmeyen kaldırımı tamponlamak için yeterince yumuşak, kilometrelerce yeterli itme sağlamak için yeterince sağlam ve saatlerce yumruk atmaya yetecek kadar iriyarı - yine de "slog" kelimesinin düşüncelerinizi karartmasını engelleyecek kadar hafif bir şeye ihtiyacınız var. Bu ayakkabılarla çok fazla zaman geçireceğiniz ve her ay yeni bir ayakkabı almak istemeyeceğiniz için dayanıklılık ve konfor da yeni bir önem kazanacak. İster bir maraton için antrenman yapıyor olun, ister sadece keyif ve meydan okuma için kilometrenizi artırıyor olun, bunlar testlerimize göre iş için en iyi ayakkabılardır.</p>
             </article>
-            <article></article>
-            <article></article>
+            <article name="Konu 2">
+                <h2>En İyi 10 Uzun Mesafe Koşu Ayakkabısı</h2>
+                <ul>
+                    <li><b>Most Versatile:</b>Asics Gel-Nimbus Lite 3</li>
+                    <li><b>Best for Wide Feet:</b>Topo Athletic Phantom 2</li>
+                    <li><b>Lightweight Cushioning:</b>Hoka Mach 4</li>
+                    <li><b>Responsive and Durable:</b>Mizuno Wave Rider 25</li>
+                    <li><b>Best Fit Update:</b>Nike Air Zoom Pegasus 38</li>
+                    <li><b>Best Daily Trainer:</b>New Balance Fresh Foam 880v11</li>
+                    <li><b>Best for Trails:</b>Salomon Ultra Glide</li>
+                    <li><b>Most Stability:</b>Brooks Glycerin GTS 19</li>
+                    <li><b>Budget Daily Trainer:</b>Brooks Trace</li>
+                    <li><b>Best Marathon Racer:</b>Saucony Endorphin Pro 2</li>
+                </ul>
+            </article>
+            <article name="Konu 3">
+                <h2>Peki Biz Ayakkabı Seçerken Nelere Dikkat Etmeliyiz?</h2>
+                <p>En iyi uzun mesafe koşu ayakkabıları, konfor, uzun ömür ve değer açısından genel olarak en iyi koşu ayakkabıları ile göze çarpan özellikleri paylaşır. Bununla birlikte, ayağınızda daha fazla zaman geçirmek, ayağınızın daha geniş bir parmak kutusundan ve şişme durumunda daha geniş bir üst kısımdan faydalanacağı anlamına gelebilir. Tipik olarak, iyi bilenmiş yürüyüş mekaniği ilave yastıklama ihtiyacını azaltmaya yardımcı olabileceğinden, çok deneyimli koşucuların daha minimalist ayakkabılarla acemilerden daha iyi ücret alacağını görüyoruz. Öte yandan, ilk kez maraton koşusu yapanlar, genellikle daha ağır bir antrenörün ekstra dolgusunu ve başlangıç ​​çizgisine yaralanmadan ulaşmalarındaki yardımını takdir eder.</p>
+                <p>Uzun mesafe katedeceğiniz için dayanıklı bir dış taban da anahtar olacaktır: Katı kauçuk, daha esnek şişirilmiş kauçuğa göre daha uzun süre dayanır, ancak ikincisi ayakkabının yumuşaklığına ve yastıklamasına katkıda bulunabilir. Orta tabanda, termoplastik poliüretan (TPU) köpük, etilen vinil asetat (EVA) köpüğünden daha uzun ömür sağlayabilir, ancak genellikle ayakkabının geneline daha fazla ağırlık katacaktır. Bu nedenle, birçok ayakkabı markası, her iki köpüğün bir karışımını içeren kendi tescilli karışımlarını geliştirmiştir. Şu anda, en hafif ve en duyarlı orta taban malzemelerinden biri, genellikle Pebax olarak adlandırılan bir polieter blok amid elastomeridir. Nike'ın ZoomX'i ve Saucony'nin Pwrrun PB'si gibi üst düzey köpüklerde kullanıldığını göreceksiniz - dezavantajı pahalı olmasıdır. Bir koşu ayakkabısını iyi yapan şeyin ne olduğunu öğrenmek istiyorsanız daha fazlasını burada bulabilirsiniz.</p>   
+            </article>
         </section>
     </main>
     <footer>
+        <hr>
         <!-- İletişim bilgileri lazım (telefon, mail ve adres) -->
+        <div name="İletişim Bilgileri">
+        <p>Bize Aşağıdaki Bağlantılardan ulaşabilirsiniz.</p>
+        <a href="tel:+905554443322">Telefon</a>
+        <a href="mailto:info@myrunningshoe.com">Mail</a>
+        </div>
         <!-- Sosyal medya hızlı linkleri lazım -->
+        <div name="Sosyal Medya" style="text-align:right;">
+        <p>Bizi Sosyal Medyada da Takip Edebilirsiniz.</p>
+        <a href="https://www.instagram.com/runningshoesguru/"><button>Instagram</button></a>
+        <a href="https://twitter.com/runningshoesgur/"><button>Twitter</button></a>
+        <a href="https://www.facebook.com/runningshoesguru/"><button>Facebook</button></a>
+        <a href="https://www.youtube.com/user/runningshoesguru"><button>Youtube</button></a>
+        </div>
     </footer>
 </body>
 </html>

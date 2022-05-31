@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ</title>
+    <title>Myrunningshoe.com | Quiz</title>
 </head>
 <body>
-    <article>
+    <nav>
+        <!-- Logoya ihtiyacımız var -->
+        <div>
+            <img src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" height="100" alt="Nike Logo">
+            <img src="https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/sites/7/2019/06/Logo-Adidas.jpg" height="100" alt="Adidas Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salomon_Logo_seit_2013.jpg" height="100" alt="Salomon Logo">
+            <img src="https://productimages.hepsiburada.net/s/54/375/11195266334770.jpg" height="100" alt="Asics Logo">
+            <img src="https://www.coolshoes.com/uploads/1/0/7/5/107516375/hoka-logo_orig.png" height="100" alt="Hoka Logo">
+        </div>
+
+        <!-- Site ismi ve ana başlık -->
+        <div style="text-align:center;">
+            <h1 style="color:blue; font-size:30px;">MYRUNNINGSHOE</h1>
+            <!-- Arama Motoru -->
+            <input type="text" placeholder="Anahtar Kelimeyi Giriniz">
+            <input type="submit" name="" id="" value="Arama">
+        </div>
+            
+        <!-- Diğer Sayfalar -->
+        <div style="text-align:right;">
+            <a href="myrunningshoe.html">ANASAYFAYA GERİ DÖN</a>
+        </div>
+        <hr>
+    </nav>
+    <article name="Quiz">
+        <h1>Koşu Dünyası ve Ürünleri Hakkında Sizler Neler düşünüyorsunuz?</h1>
+        <hr>
         <ol>
             <li><p>Aşağıdaki ayakkabılardan hangisini arazi koşullarında kullanmak için tercih edersiniz?</p>
                 <form>
@@ -74,9 +100,42 @@
                     <textarea name="" id="" cols="40" rows="12">Maraton koşmak istiyorum. Çünkü...</textarea>
                     <input type="submit" value="Gönder">
                 </form>
-
+                <br>
+            </li>
+            <li><p>Aşağıdaki ayakkabı seçeneklerinden birini seçerek, o ayakkabı hakkındaki görüşlerinizi yazınız.</p>
+                <form action="">
+                    <label for="Ayakkabı">Yorum yapacağınız ayakkabıyı seçiniz.</label>
+                    <br>
+                    <select name="Ayakkabı" id="Ayakkabı">
+                        <option value="Nike">Nike Vaporfly</option>
+                        <option value="Adidas">Adidas Ultra Boost</option>
+                        <option value="Salomon">Salomon Sense Ride</option>
+                        <option value="Asics">Asics Jel Nimbus</option>
+                    </select>
+                    <input type="submit" value="Seçiniz">
+                    <br><br>
+                    <textarea name="" id="" cols="30" rows="10">Bu ayakkabıdan çok memnunum. Çünkü...</textarea>
+                    <input type="submit" value="Gönder">
+                </form>
             </li>
             </ol>
     </article>
+    <footer>
+        <hr>
+        <!-- İletişim bilgileri lazım (telefon, mail ve adres) -->
+        <div name="İletişim Bilgileri">
+        <p>Bize Aşağıdaki Bağlantılardan ulaşabilirsiniz.</p>
+        <a href="tel:+905554443322">Telefon</a>
+        <a href="mailto:info@myrunningshoe.com">Mail</a>
+        </div>
+        <!-- Sosyal medya hızlı linkleri lazım -->
+        <div name="Sosyal Medya" style="text-align:right;">
+        <p>Bizi Sosyal Medyada da Takip Edebilirsiniz.</p>
+        <a href="https://www.instagram.com/runningshoesguru/"><button>Instagram</button></a>
+        <a href="https://twitter.com/runningshoesgur/"><button>Twitter</button></a>
+        <a href="https://www.facebook.com/runningshoesguru/"><button>Facebook</button></a>
+        <a href="https://www.youtube.com/user/runningshoesguru"><button>Youtube</button></a>
+        </div>
+    </footer>
 </body>
 </html>
