@@ -5,31 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myrunningshoe.com | Reviews</title>
+    <link rel="stylesheet" href="myrunningshoe.css">
 </head>
 <body>
     <nav>
-        <!-- Logoya ihtiyacımız var -->
-        <div>
-            <img src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" height="100" alt="Nike Logo">
-            <img src="https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/sites/7/2019/06/Logo-Adidas.jpg" height="100" alt="Adidas Logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salomon_Logo_seit_2013.jpg" height="100" alt="Salomon Logo">
-            <img src="https://productimages.hepsiburada.net/s/54/375/11195266334770.jpg" height="100" alt="Asics Logo">
-            <img src="https://www.coolshoes.com/uploads/1/0/7/5/107516375/hoka-logo_orig.png" height="100" alt="Hoka Logo">
+        <!-- Marka logoları burada. -->
+        <div class="n-logo">
+            <img src="https://pngimg.com/uploads/nike/nike_PNG11.png" alt="Nike Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="Adidas Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Salomon_group_logo.png" alt="Salomon Logo">
+            <img src="https://seeklogo.com/images/B/Brooks-logo-BE9048B4D9-seeklogo.com.png" alt="Brooks Logo">
+            <img src="https://www.coolshoes.com/uploads/1/0/7/5/107516375/hoka-logo_orig.png" alt="Hoka Logo">
         </div>
 
+        <!-- Kullanıcı bilgileri giriş alanı -->
+        <fieldset>
+            <legend>Kullanıcı Girişi</legend>
+        <form action="myrunningshoe.html">
+            <label for="k-adi">Kullanıcı Adı:</label><br>
+            <input type="text" id="k-adi"><br>
+            <label for="sifre">Şifre:</label><br>
+            <input type="text" id="sifre"><br><br>
+            <input type="submit" value="Onayla">
+        </form>
+        </fieldset>
+
+        <!-- Burada fieldset etiketi ile alanın dış çizgilerini belirlerken legend ile bu çizili alanın ismini belirliyor ve görselde de gösteriyoruz. Bu alanın içinde ise form ile etiketimizi açıp, label etiketi ile kullanıcı ismi şifre gibi doldurulacak text bilgisi isimlerini ayarlarken, input ile bu textin kendisini yaratıyoruz. En son olarak da input etiketini submit özelliği ile kullanıyor ve value'yi belirlediğimiz isimde submit tuşunu oluşturmuş oluyoruz. İsteseydik input etiketi özelliklerine valueler belirleyebilir ve böylece text yazılacak alanı boş gözükmez belirlediğimiz ifadenin silinebilir hali ile dolu olarak gözükürdü. -->
+
+        <!-- Alt satıra geçme kodu. -->
+        <div class="clr"></div>
+
         <!-- Site ismi ve ana başlık -->
-        <div style="text-align:center;">
-            <h1 style="color:blue; font-size:30px;">MYRUNNINGSHOE</h1>
-            <!-- Arama Motoru -->
+        <div class="s-bar">
+            <h1>MYRUNNINGSHOE</h1>
+        <!-- Arama motoru -->
             <input type="text" placeholder="Anahtar Kelimeyi Giriniz">
-            <input type="submit" name="" id="" value="Arama">
+            <input type="submit" value="Arama">
         </div>
-            
-        <!-- Diğer Sayfalar -->
+        
+        <!-- Sayfa bağlantı yönergeleri. -->
         <div style="text-align:right;">
-            <a href="myrunningshoe.html">ANASAYFAYA GERİ DÖN</a>
+            <a href="myrunningshoe.html">ANASAYFA</a>
+            <a href="reviews.html">REVIEWS</a>
+            <a href="bestof2022.html">BESTOF2022</a>
+            <a href="training.html">TRAINING</a>
+            <a href="quiz.html">QUIZ</a>
         </div>
-        <hr>
     </nav>
     <main>
         <section>

@@ -1,0 +1,108 @@
+/* Sayfa yapısı genel ayarı. */
+body {
+    margin: 0px;
+}
+
+/* Alt satıra geçmek için kullanılan komut özelliği. */
+.clr {clear: both;
+}
+
+/* Logoların genel ayarları. */
+.n-logo {
+    width: 1150px;
+    float: left;
+    padding: 10px;
+    margin-left: 400px;
+}
+
+/* Logoların her birinin ayrı ayrı ayarı. */
+.n-logo img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+/* Nav Bar genel ayarları. */
+nav {
+    background-image: url(https://media.gettyimages.com/photos/teenager-trail-running-along-mountain-path-brecon-beacons-panorama-picture-id528503230?s=2048x2048);
+    margin: 0px;
+    height: 260px;
+}
+
+/* Search Bar ve Ana Başlık ayarlarını buradan yapabilirsin. */
+.s-bar {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Ana Başlık ayarları. */
+.s-bar h1 {
+    margin: 0px 0px 5px 0px;
+}
+
+/* Search Bar ayarları. */
+.s-bar input[type="text"] {
+    width: 300px;
+    height: 20px;
+}
+
+/* Search Bar Ara tuşu ayarları. */
+.s-bar input[type="submit"] {
+    width: 80px;
+    height: 26px;
+    background-color: white;  
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(49, 156, 228);
+    
+}
+
+/* Search Bar Ara tuşu hover özelliği. */
+.s-bar input[type="submit"]:hover {
+    background-color: rgb(49, 156, 228);
+    color: white;
+}
+
+/* Kullanıcı giriş bilgileri ayarlarını buradan yapabilirsin. */
+fieldset {
+    width: 200px;
+    margin: 10px 10px 0px 0px;
+    float: right;
+    background-color: rgb(49, 156, 228);
+    color: white;
+    font-weight: bold;
+}
+
+/* Kullanıcı giriş bilgilerindeki Onayla tuşu ayarları. */
+fieldset [value="Onayla"] {
+  color: rgb(49, 156, 228);
+  background-color: white;  
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Kullanıcı giriş bilgilerindeki onayla tuşunun hover özelliği. */
+fieldset [value="Onayla"]:hover {
+    background-color: rgb(49, 156, 228);
+    color: white;
+}
+
+
+/* nav bar içerisindeki sayfayönlendirme yönergeleri için tüm değişiklikleri buradan yapabilirsin. */
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(49, 156, 228);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 2px;
+}
+
+/* nav bardaki sayfa yönlendirme yönergelerinin hover özelliği. */
+nav a:hover {
+    background-color: white;
+    color: rgb(49, 156, 228);
+}
