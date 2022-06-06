@@ -7,6 +7,8 @@ body {
 .clr {clear: both;
 }
 
+/**************************** NAV-BAR İÇİN GEREKLİ CSS AYARLARI ***********************************/
+
 /* Logoların genel ayarları. */
 .n-logo {
     width: 1150px;
@@ -23,9 +25,10 @@ body {
 
 /* Nav Bar genel ayarları. */
 nav {
-    background-image: url(https://media.gettyimages.com/photos/teenager-trail-running-along-mountain-path-brecon-beacons-panorama-picture-id528503230?s=2048x2048);
+    background-image: url(/images/banner.jpeg);
+    background-size: cover;
     margin: 0px;
-    height: 260px;
+    height: 280px;
 }
 
 /* Search Bar ve Ana Başlık ayarlarını buradan yapabilirsin. */
@@ -36,13 +39,19 @@ nav {
 
 /* Ana Başlık ayarları. */
 .s-bar h1 {
-    margin: 0px 0px 5px 0px;
+    margin: auto;
+    color: rgb(49, 156, 228);
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
 }
 
 /* Search Bar ayarları. */
 .s-bar input[type="text"] {
     width: 300px;
     height: 20px;
+    margin: 10px;
 }
 
 /* Search Bar Ara tuşu ayarları. */
@@ -53,8 +62,7 @@ nav {
     border: 2px solid white;
     border-radius: 10px;
     font-weight: bold;
-    color: rgb(49, 156, 228);
-    
+    color: rgb(49, 156, 228);  
 }
 
 /* Search Bar Ara tuşu hover özelliği. */
@@ -105,4 +113,49 @@ nav a {
 nav a:hover {
     background-color: white;
     color: rgb(49, 156, 228);
+}
+
+/********************************* MAIN İÇİN GEREKLİ CSS AYARLARI *********************************/
+main {
+    pad: 0px;
+    margin: 0px;
+}
+
+.s-left {
+    background-color: yellow;
+    margin:10px 1% 10px 1% ;
+    padding: 10px 1% 10px 1%;
+    width: 16%;
+    float: left;
+}
+
+.s-right {
+    background-color: orange;
+    margin:10px 1% 10px 1% ;
+    padding: 10px 1% 10px 1%;
+    width: 16%;
+    float: right;
+}
+
+section {
+    background-color: aqua;
+    margin:10px 20.6% 10px 20.6% ;
+    padding: 10px 0.4% 10px 0.4%;
+    width: 58%;
+}
+
+/******************************** FOOTER İÇİN GEREKLİ CSS AYARLARI ********************************/
+
+.i-bil {
+    background-color: aqua;
+    height: 80px;
+    width: 350px;
+    float: left;
+}
+
+.s-med {
+    background-color: aqua;
+    height: 80px;
+    width: 350px;
+    float: right;
 }
