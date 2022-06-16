@@ -1,45 +1,51 @@
-/* Sayfa yapısı genel ayarı. */
-body {
-    margin: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-/* Alt satıra geçmek için kullanılan komut özelliği. */
-.clr {clear: both;
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
 }
 
 /**************************** NAV-BAR İÇİN GEREKLİ CSS AYARLARI ***********************************/
 
-/* Logoların genel ayarları. */
-.n-logo {
-    width: 1150px;
-    float: left;
-    padding: 10px;
-    margin-left: 400px;
-}
-
-/* Logoların her birinin ayrı ayrı ayarı. */
-.n-logo img {
-    height: 90px;
-    margin-right: 10px;
-}
-
-/* Nav Bar genel ayarları. */
 nav {
     background-image: url(/images/banner.jpeg);
     background-size: cover;
-    margin: 0px;
-    height: 280px;
+    background-position: center;
+    height: 300px;
 }
 
-/* Search Bar ve Ana Başlık ayarlarını buradan yapabilirsin. */
-.s-bar {
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-right: 30px;
+}
+
+.logo img:nth-child(5) {
+    margin-right: 0;
+}
+
+.search {
     font-size: 20px;
     text-align: center;
 }
 
-/* Ana Başlık ayarları. */
-.s-bar h1 {
-    margin: auto;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search h1 {
+    margin: 80px auto 10px auto;
     color: rgb(49, 156, 228);
     background-color: white;
     border-radius: 10px;
@@ -47,15 +53,19 @@ nav {
     text-align: center;
 }
 
-/* Search Bar ayarları. */
-.s-bar input[type="text"] {
+.search input[type="text"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
-    height: 20px;
+    height: 30px;
     margin: 10px;
+    padding: 3px 8px;
+    border: rgb(49, 156, 228) solid 1px;
+    border-radius: 10px;
 }
 
-/* Search Bar Ara tuşu ayarları. */
-.s-bar input[type="submit"] {
+.search input[type="submit"] {
     width: 80px;
     height: 26px;
     background-color: white;  
@@ -65,97 +75,250 @@ nav {
     color: rgb(49, 156, 228);  
 }
 
-/* Search Bar Ara tuşu hover özelliği. */
-.s-bar input[type="submit"]:hover {
+.search input[type="submit"]:hover {
     background-color: rgb(49, 156, 228);
     color: white;
 }
 
-/* Kullanıcı giriş bilgileri ayarlarını buradan yapabilirsin. */
-fieldset {
-    width: 200px;
-    margin: 10px 10px 0px 0px;
-    float: right;
-    background-color: rgb(49, 156, 228);
-    color: white;
-    font-weight: bold;
+.pages {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+    margin-right: 5px;
 }
 
-/* Kullanıcı giriş bilgilerindeki Onayla tuşu ayarları. */
-fieldset [value="Onayla"] {
-  color: rgb(49, 156, 228);
-  background-color: white;  
-  border: 2px solid white;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-/* Kullanıcı giriş bilgilerindeki onayla tuşunun hover özelliği. */
-fieldset [value="Onayla"]:hover {
-    background-color: rgb(49, 156, 228);
-    color: white;
-}
-
-
-/* nav bar içerisindeki sayfayönlendirme yönergeleri için tüm değişiklikleri buradan yapabilirsin. */
-nav a {
+.pages a {
+    font-size: 12px;
     font-weight: bold;
     text-decoration: none;
     color: white;
     background-color: rgb(49, 156, 228);
     border: 2px solid white;
     border-radius: 10px;
-    padding: 8px;
+    padding: 5px;
     margin: 2px;
 }
 
-/* nav bardaki sayfa yönlendirme yönergelerinin hover özelliği. */
-nav a:hover {
+.pages a:hover {
     background-color: white;
     color: rgb(49, 156, 228);
 }
 
+fieldset {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(49, 156, 228);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+fieldset [value="Onayla"] {
+  color: rgb(49, 156, 228);
+  background-color: white;  
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 10px;
+  height: 25px;
+  width: 60px;
+}
+
+fieldset [value="Onayla"]:hover {
+    background-color: rgb(49, 156, 228);
+    color: white;
+}
+
+
 /********************************* MAIN İÇİN GEREKLİ CSS AYARLARI *********************************/
 main {
-    pad: 0px;
-    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: justify;
 }
 
-.s-left {
-    background-color: yellow;
-    margin:10px 1% 10px 1% ;
-    padding: 10px 1% 10px 1%;
-    width: 16%;
-    float: left;
+h1 {
+    margin: 5px 0 5px 0;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
-.s-right {
-    background-color: orange;
-    margin:10px 1% 10px 1% ;
-    padding: 10px 1% 10px 1%;
-    width: 16%;
-    float: right;
+h3 {
+    margin: 5px 0 10px 0;
+    text-align: center;
 }
 
-section {
-    background-color: aqua;
-    margin:10px 20.6% 10px 20.6% ;
-    padding: 10px 0.4% 10px 0.4%;
-    width: 58%;
+ul li {
+    list-style-position: inside;
+}
+
+ol li {
+    list-style-position: inside;
+}
+
+.left {
+    width: 25%;
+    margin: 30px 5% 30px 5%;
+    padding: 15px;
+    order: 1;
+}
+
+.right {
+    width: 25%;
+    margin: 30px 5% 30px 5%;
+    padding: 15px;
+    order: 3;
+
+}
+.middle {
+    width: 50%;
+    margin: 30px 0 30px 0;
+    padding: 15px;
+    order: 2;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+main img {
+    width: 100%;
+    height: auto;
+}
+figure {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+figure table {
+    align-items: flex-start;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background-color: rgb(49, 156, 228);
+    border-color: white;
+    border-radius: 10px;  
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.quiz article ol li {
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz article ol li:nth-child(odd) {
+    background-color: rgb(49, 156, 228);
+}
+
+.quiz article ol li:nth-child(even) {
+    background-color: rgb(139, 200, 240);
 }
 
 /******************************** FOOTER İÇİN GEREKLİ CSS AYARLARI ********************************/
 
-.i-bil {
-    background-color: aqua;
-    height: 80px;
-    width: 350px;
-    float: left;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(49, 156, 228);
+    padding: 15px;
 }
 
-.s-med {
-    background-color: aqua;
-    height: 80px;
-    width: 350px;
-    float: right;
+.contact p {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.contact .contact2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .contact2 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(49, 156, 228);
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 2px;
+}
+
+.contact .contact2 a:hover {
+    background-color: rgb(49, 156, 228);
+    color: white;
+}
+
+.contact .contact2 a:nth-child(1) {
+margin-right: 5px;
+}
+
+.media p {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.media .media2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.media .media2 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(49, 156, 228);
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 2px 5px 2px 2px;
+}
+
+.media .media2 a:nth-child(4) {
+    margin-right: 0;
+}
+
+.media .media2 a:hover {
+    background-color: rgb(49, 156, 228);
+    color: white;
 }

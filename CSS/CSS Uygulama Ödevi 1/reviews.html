@@ -4,64 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myrunningshoe.com | Reviews</title>
+    <title>Myrunningshoe.com | İNCELEMELER</title>
     <link rel="stylesheet" href="myrunningshoe.css">
 </head>
 <body>
     <nav>
-        <!-- Marka logoları burada. -->
-        <div class="n-logo">
+        <!-- Logolar -->
+        <div class="logo">
             <img src="https://pngimg.com/uploads/nike/nike_PNG11.png" alt="Nike Logo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="Adidas Logo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Salomon_group_logo.png" alt="Salomon Logo">
             <img src="https://seeklogo.com/images/B/Brooks-logo-BE9048B4D9-seeklogo.com.png" alt="Brooks Logo">
             <img src="https://www.coolshoes.com/uploads/1/0/7/5/107516375/hoka-logo_orig.png" alt="Hoka Logo">
         </div>
-
-        <!-- Kullanıcı bilgileri giriş alanı -->
-        <fieldset>
-            <legend>Kullanıcı Girişi</legend>
-        <form action="myrunningshoe.html">
-            <label for="k-adi">Kullanıcı Adı:</label><br>
-            <input type="text" id="k-adi"><br>
-            <label for="sifre">Şifre:</label><br>
-            <input type="text" id="sifre"><br><br>
-            <input type="submit" value="Onayla">
-        </form>
-        </fieldset>
-
-        <!-- Burada fieldset etiketi ile alanın dış çizgilerini belirlerken legend ile bu çizili alanın ismini belirliyor ve görselde de gösteriyoruz. Bu alanın içinde ise form ile etiketimizi açıp, label etiketi ile kullanıcı ismi şifre gibi doldurulacak text bilgisi isimlerini ayarlarken, input ile bu textin kendisini yaratıyoruz. En son olarak da input etiketini submit özelliği ile kullanıyor ve value'yi belirlediğimiz isimde submit tuşunu oluşturmuş oluyoruz. İsteseydik input etiketi özelliklerine valueler belirleyebilir ve böylece text yazılacak alanı boş gözükmez belirlediğimiz ifadenin silinebilir hali ile dolu olarak gözükürdü. -->
-
-        <!-- Alt satıra geçme kodu. -->
-        <div class="clr"></div>
-
-        <!-- Site ismi ve ana başlık -->
-        <div class="s-bar">
+        <!-- Search Bar -->
+        <div class="search">
             <h1>MYRUNNINGSHOE</h1>
-        <!-- Arama motoru -->
-            <input type="text" placeholder="Anahtar Kelimeyi Giriniz">
-            <input type="submit" value="Arama">
+            <div class="box">
+                <input type="text" placeholder="Anahtar Kelimeyi Giriniz">
+                <input type="submit" value="Arama">
+            </div>
         </div>
-        
-        <!-- Sayfa bağlantı yönergeleri. -->
-        <div style="text-align:right;">
+        <!-- Diğer Sayfalar -->
+        <div class="pages">
             <a href="myrunningshoe.html">ANASAYFAYA GERİ DÖN</a>
         </div>
+        <!-- Kullanıcı Bilgileri -->
+        <fieldset>
+            <legend>Kullanıcı Girişi</legend>
+            <form action="myrunningshoe.html">
+                <label for="k-adi">Kullanıcı Adı:</label><br>
+                <input type="text" id="k-adi"><br>
+                <label for="sifre">Şifre:</label><br>
+                <input type="text" id="sifre"><br>
+                <input type="submit" value="Onayla">
+            </form>
+        </fieldset>
     </nav>
     <main>
-        <section>
+        <section class="middle center">
             <article name="Genel Giriş">
                 <h1>AYAKKABI İNCELEMELERİ</h1>
                 <p>İnternetteki en iyi Koşu Ayakkabısı incelemeleri! Test uzmanlarımız en yeni ayakkabıları çalıştırır ve analiz eder - ve okuyucularımızdan gelen yüzlerce geri bildirimi okuyabilirsiniz!</p>
+                <br>
+                <hr>
+                <br>
             </article>
-            <hr>
             <article name="Ayakkabı 1">
-                <h2>Brooks Launch GTS 9 İnceleme</h2>
-                <img src="https://cdn.runningshoesguru.com/wp-content/uploads/2022/05/Brooks-Launch-GTS-9-pic-11-768x431.jpeg" alt="Brooks Launch GTS 9" height="300">
+                <h3>Brooks Launch GTS 9 İnceleme</h3>
+                <br>
+                <img src="https://cdn.runningshoesguru.com/wp-content/uploads/2022/05/Brooks-Launch-GTS-9-pic-11-768x431.jpeg" alt="Brooks Launch GTS 9">
+                <br><br>
+                <div class="video">
                 <iframe width="600" height="300" src="https://www.youtube.com/embed/3jL_8n8MkSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <h3>Bizim Görüşümüz</h3>
                 <p>Brooks Launch GTS 9, hızlı bir his veren dayanıklı, hafif ve destekleyici bir ayakkabıdır. Fiyat için olağanüstü yastık, stabilite ve dayanıklılığı birleştirir.</p>
+                <br>
                 <h3>Olumlu Yanları</h3>
+                <hr>
+                <br>
                 <ul>
                     <li>Akıcı sürüş</li>
                     <li>Bağcık seçenekleri</li>
@@ -69,12 +71,15 @@
                     <li>Makul fiyat</li>
                 </ul>
                 <h3>Olumsuz Yanları</h3>
+                <hr>
+                <br>
                 <ul>
                     <li>Orta ayak uyumunda boşluk</li>
                     <li>Dildeki ince pedler bağcıklardan sıcak noktalara yol açar</li>
                 </ul>
                 <br>
-                <img src="https://www.believeintherun.com/wp-content/uploads/2022/03/brooks-launch-gts-9-cover.jpg" alt="Brooks Launch GTS 9" height="300">
+                <img src="https://www.believeintherun.com/wp-content/uploads/2022/03/brooks-launch-gts-9-cover.jpg" alt="Brooks Launch GTS 9">
+                <br><br>
                 <p>Geçen yıl Brooks, tarafsız ve dengeli dizilişlerini konsolide etti ve GuideRails'in stabilite özelliğini korurken yalnızca adlarını değil aynı zamanda denge ayakkabılarının uyumunu da değiştirdi. Işık dengesi modeli Ravenna 11'den Launch GTS 8'e geçerek Brooks'un nötr ayakkabısından "Launch" adını aldı ve eski "Go To Shoe" kısaltması yerine şimdi "Go To Support" anlamına gelen "GTS"yi ekledi.</p>
                 <p>Hız, Launch'ın odak noktasıdır ve daha fazla stabiliteye ihtiyaç duyanlar Launch GTS'yi denemeye yönlendirilir. GTS'yi Başlatırken Kılavuz Raylar, yaralanmayı önlemek için ayağı aşırı pronasyondan diz ile yardımcı hizaya nazikçe yönlendiren bir bisiklet üzerinde antrenman tekerlekleri gibi hareket eder (ancak garip bir görünüme sahip değildir!).</p>  
                 <p>Launch 9 GTS, 2 mm ile birlikte gelir. Daha fazla tepki veren yastıklama için BioMoGo orta taban.</p> 
@@ -86,9 +91,9 @@
                 <br>
             </article>
             <figure name="Ayakkabı Özelikleri 1">
-                <table border="1" >
+                <table border="1" style="max-width: 60%;" >
                     <tr>
-                        <th colspan="2" style="text-align:centre;">Ayakkabı Bilgisi</th>
+                        <th colspan="2">Ayakkabı Bilgisi</th>
                     </tr>
                     <tr>
                         <td>Marka</td>
@@ -127,8 +132,7 @@
                         <td>Launch GTS 8</td>
                     </tr>
                 </table>
-                <br>
-                <table border="1" style="width:200px; text-align:center;">
+                <table border="1" style="max-width: 35%;">
                     <tr>
                         <td>Kimler İçin Uygun?</td>
                     </tr>
@@ -138,13 +142,20 @@
                 </table>
             </figure>
             <hr>
+            <br>
             <article name="Ayakkabı 2">
-                <h2>Nike Air Zoom Pegasus 39 İnceleme</h2>
-                <img src="https://cdn.runningshoesguru.com/wp-content/uploads/2022/05/Nike-Air-Zoom-Pegasus-39-pic-03-768x431.jpeg" alt="Nike Air Zoom Pegasus 39" height="300">
+                <h3>Nike Air Zoom Pegasus 39 İnceleme</h3>
+                <br>
+                <img src="https://cdn.runningshoesguru.com/wp-content/uploads/2022/05/Nike-Air-Zoom-Pegasus-39-pic-03-768x431.jpeg" alt="Nike Air Zoom Pegasus 39">
+                <br><br>
+                <div class="video">
                 <iframe width="533" height="300" src="https://www.youtube.com/embed/MjM2sotom5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <h3>Bizim Görüşümüz</h3>
                 <p>Nike Air Zoom Pegasus 39, dayanıklı olacak şekilde tasarlanmış rahat, orta sınıf bir günlük spor ayakkabıdır. Heyecan verici veya canlı bir sürüşü yok ama paranızın karşılığını fazlasıyla alıyor ve çok dengeli. 39. versiyonda yeni bir üst, orta taban ve dış taban var, ancak en büyük yükseltme, bir ons kilo vermesidir.</p>
                 <h3>Olumlu Yanları</h3>
+                <hr>
+                <br>
                 <ul>
                     <li>istikrarlı sürüş</li>
                     <li>Yüksek dayanıklılık</li>
@@ -153,13 +164,16 @@
                     <li>Fiyat-performans ürünü</li>
                 </ul>
                 <h3>Olumsuz Yanları</h3>
+                <hr>
+                <br>
                 <ul>
                     <li>Mülayim sürüş</li>
                     <li>Gevşek dış taban</li>
                     <li>Topaklı ön ayak</li>
                 </ul>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTktp6V4CJnlf0-_rKo7YFtWcLx7MO2fMeLpw&usqp=CAU" alt="Nike Air Zoom Pegasus 39" height="300px">
                 <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTktp6V4CJnlf0-_rKo7YFtWcLx7MO2fMeLpw&usqp=CAU" alt="Nike Air Zoom Pegasus 39" height="300px">
+                <br><br>
                 <p>Umarım Pegasus adını kim bulduysa ve kanatlı beygir terimini türettiyse çok ama çok büyük bir ikramiye almıştır. Pegasus tam olarak budur, bir tank gibi inşa edilmiş ve yüzlerce kilometre dayanacak şekilde tasarlanmış bir koşu ayakkabısıdır.</p>
                 <p>Pegasus'un kulağa heyecan verici bir ayakkabı gibi gelmediğini düşünüyorsanız, değerlendirmenizde çok isabetli olursunuz. Nike'ın pazarlaması bu kadar iyi: heyecan verici olmayan bir ayakkabıyı dünyanın en popüler koşu ayakkabısı yapmayı başardılar.</p>
                 <p>Pegasus ile ilk deneyimim 9 yıl önce 30. versiyon oldu. Acımasızca dürüst olmam gerekirse, yetenekten yoksun olduğu için onunla gerçekten hayal kırıklığına uğradım ama o zamanlar Pegasus'un ne hakkında olduğunu bilmiyordum.</p>
@@ -167,11 +181,12 @@
                 <p>En sevdiğim versiyon 32'ydi. Ayaklarıma mükemmel uyum sağlarken, sürüş pürüzsüz ve tutarlı hissettirdi çünkü bu, Zoom Air'i ön ayağa koymaya başlamadan önceydi. Versiyon 35 de iyiydi, ancak daha ince, tam boy hava yastığı nedeniyle sürüş belirgin şekilde daha düzdü.</p>
                 <p>Pegasus, her iki yılda bir üst, orta ve dış tabanının güncellendiği büyük bir güncelleme alır. Bu yıl büyük güncelleme yılıdır, bu nedenle değişiklikler bekleyebilirsiniz, ancak bu pek bir şey ifade etmez çünkü sonuçta Pegasus ve sadık hayran kitlelerini korumak için tutarlı kalmak istiyorlar.</p>
                 <p>Pegasus 39'un yeni bir üst, orta ve dış tabanı var, ancak Pegasus sadıklarının en çok ilgileneceği şey, yeni Peg 39'un tam bir ons veya 28 gram ağırlık kaybetmesi. Artık 9,2 oz (261 g) ağırlığındadır. Sınıfında hala yeni Ride 15'ten 0,5 ons daha ağırdır ancak şimdi Ghost 14, Cumulus 24, Wave Rider 25 ve 880v12'den daha hafiftir.</p>
+                <br>
             </article>
             <figure name="Ayakkabı Özelikleri 2">
-                <table border="1" >
+                <table border="1" style="max-width: 60%;">
                     <tr>
-                        <th colspan="2" style="text-align:centre;">Ayakkabı Bilgisi</th>
+                        <th colspan="2">Ayakkabı Bilgisi</th>
                     </tr>
                     <tr>
                         <td>Marka</td>
@@ -203,7 +218,7 @@
                     </tr>
                 </table>
                 <br>
-                <table border="1" style="width:200px; text-align:center;">
+                <table border="1" style="max-width: 35%;">
                     <tr>
                         <td>Kimler İçin Uygun?</td>
                     </tr>
@@ -216,20 +231,23 @@
         </section>
     </main>
     <footer>
-        <hr>
-        <!-- İletişim bilgileri lazım (telefon, mail ve adres) -->
-        <div name="İletişim Bilgileri">
-        <p>Bize Aşağıdaki Bağlantılardan ulaşabilirsiniz.</p>
-        <a href="tel:+905554443322">Telefon</a>
-        <a href="mailto:info@myrunningshoe.com">Mail</a>
+        <!-- İletişim bilgileri (telefon, mail ve adres) -->
+        <div class="contact" name="İletişim Bilgileri">
+            <p>Bize Aşağıdaki Bağlantılardan ulaşabilirsiniz.</p>
+            <div class="contact2">
+                <a href="tel:+905554443322">Telefon</a>
+                <a href="mailto:info@myrunningshoe.com">Mail</a>
+            </div>
         </div>
-        <!-- Sosyal medya hızlı linkleri lazım -->
-        <div name="Sosyal Medya" style="text-align:right;">
-        <p>Bizi Sosyal Medyada da Takip Edebilirsiniz.</p>
-        <a href="https://www.instagram.com/runningshoesguru/"><button>Instagram</button></a>
-        <a href="https://twitter.com/runningshoesgur/"><button>Twitter</button></a>
-        <a href="https://www.facebook.com/runningshoesguru/"><button>Facebook</button></a>
-        <a href="https://www.youtube.com/user/runningshoesguru"><button>Youtube</button></a>
+        <!-- Sosyal medya hızlı linkleri -->
+        <div class="media" name="Sosyal Medya">
+            <p>Bizi Sosyal Medyada da Takip Edebilirsiniz.</p>
+            <div class="media2">
+                <a href="https://www.instagram.com/runningshoesguru/">Instagram</a>
+                <a href="https://twitter.com/runningshoesgur/">Twitter</a>
+                <a href="https://www.facebook.com/runningshoesguru/">Facebook</a>
+                <a href="https://www.youtube.com/user/runningshoesguru">Youtube</a>
+            </div>
         </div>
     </footer>
 </body>
