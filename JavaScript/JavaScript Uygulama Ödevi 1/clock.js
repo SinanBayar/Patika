@@ -46,6 +46,14 @@ if (second<10) {second = "0" + second}
 let time = document.querySelector("#myClock")
 time.innerHTML = hour + ":" + minute + ":" + second + " " + dayName
 
+// ---------------------------------------------------------------------------------------------  //
+
+// Şöyle bir yöntem kullanarak "if" içeren kodları(40-41-42) kullanmadan da çözebilirdik.
+
+// document.querySelector("#myClock").innerHTML = ("0" + hour).slice(-2) + ":" + ("0" + minute).slice(-2) + ":" + ("0" + second).slice(-2) + " " + dayName
+
+// ---------------------------------------------------------------------------------------------  //
+
 // "setTimeout" komutu ile saniye geçişlerinin canlı olarak gözükmesini sağladım. Burada komutu kullanacağımız fonksiyonu "" içerisinde yazıp sonrasında "," koymamız komutun çalışması için önemli. Sonrasında girilen değer ise fonksiyonun başlaması için beklenecek sürenin milisaniye biriminden değeridir. 1000ms=1sn olduğundan ve her 1 saniyede bir komut kendini tekrarlayacak ve bizde her saniyedeki değişimi görebileceğiz.
 
 setTimeout("showTime()",1000)
