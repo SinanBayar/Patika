@@ -1,0 +1,279 @@
+/* Tüm sayfayı ilgilendiren genel ayarlar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/******************************************* HEADER ***********************************************/
+
+section header {
+    position: absolute;
+    /* header'in yeri sabitlendi */
+    top: 0;
+    /* header üste sıfırlandı */
+    width: 100%;
+    /* header genişlik tüm alanı kapladı */
+    display: flex;
+    /* header görünümünde bloklar yanyana dizilebilir */
+    justify-content: flex-end;
+    /* header'deki bloklar sağ tarafta yanyana sıralanır */
+    padding: 20px;
+    /* header için her yönden y,çerik ile border arasına boşluk eklendi */
+}
+
+section header ul {
+    display: flex;
+    /* ul içindeki listekler yanyana sıralanabilir */
+    justify-content: center;
+    /* ul içerisindeki içerik ortaya hizalandı */
+    align-items: center;
+    /* içerik tek bir ufuk çizgisi hizasında ortalandı */
+}
+
+section header ul li {
+    list-style: none;
+    /* listelerin işaretleri yokedildi */
+    margin-left: 20px;
+    /* listeler arası soldan boşuk eklendi */
+}
+
+section header ul li a {
+    color: #111;
+    /* link yazısı rengi */
+    text-decoration: none;
+    /* link altyazıları silindi */
+    font-size: 13px;
+    /* link yazı boyutu */
+}
+
+section header ul li a:hover {
+    text-decoration: underline;
+    /* linklerin üstüne cursor gelince altyazı çıkar */
+}
+
+section header ul li button {
+    background-color: #4584ef;
+    /* buton arkplan rengi */
+    border: none;
+    /* sınır yok */
+    outline: none;
+    /* dış sınır yok */
+    padding: 8px 14px;
+    /* buton yazısı ile sınır kutu sınırı arası boşluk */
+    color: #fff;
+    /* buton yazı rengi */
+    font-size: 14px;
+    /* buton yazı boyutu */
+    font-weight: 700;
+    /* buton yazı kalınlığı */
+    border-radius: 3px;
+    /* buton koşelerinin yuvarlaklık çapı */
+    cursor: pointer;
+    /* cursor butona geldiğinde pointer(işaret parmağı)'e dönüşür */
+}
+
+/******************************************** MAIN* ***********************************************/
+
+section main {
+    width: 580px;
+    /* main alanının genişlik ölçüsü */
+    display: flex;
+    /* main'deki içerikler yanyana sıralanabilir */
+    flex-direction: column;
+    /* yanyana sıralama genişliği main genişliği(column) kadar olur */
+    align-items: center;
+    /* içerik tek bir ufuk çizgisi hizasında ortalandı */
+    justify-content: center;
+    /* main içerisindeki içerik ortalandı */
+}
+
+section main .search-box {
+    position: relative;
+    /* search-box yeri belirlenebilir */
+    width: 100%;
+    /* search-box genişliği %100 */
+    margin-top: 20px;
+    /* search-box'ın üstüne boşluk eklendi */
+}
+
+section main .search-box .search {
+    width: 100%;
+    /* searchbar genişliği %100 yani main kadar */
+    padding: 13px;
+    /* searchbar içindeki yazı ile kutu sınırı arasına boşluk eklendi */
+    padding-left: 45px;
+    padding-right: 60px;
+    /* soldan ve sağdan eklenen bu boşluklar ileride oralara resim koymak için kullanılacak */
+    border-radius: 30px;
+    /* searchbar koşe çapları belirlendi */
+    border: 1px solid #ccc;
+    /* searchbar sınır ölçüsü rengi ve cinsi belirlendi */
+    outline: none;
+    /* sınır üstüne başka çizgi yok */
+    font-size: 16px; 
+    /* yazı boyutu */
+}
+
+section main .search-box .icons {
+    position: absolute;
+    /* searchbar sağına ve soluna eklenecek ikonların yeri sabitlenecek */
+    top: 0;
+    /* ikonlar search-box'ın üstüne 0 çizgisinde konumlandı */
+    width: 100%;
+    /* ikon genişliği %100 */
+    display: flex;
+    /* ikonlar yanyana sıralanbilir */
+    padding: 12px 20px;
+    /* ikon içi boşuklar belirlendi */
+    justify-content: space-between;
+    /* ikonlar sağda-solda ve aralarında boşluk olacak şekilde konumlandı */
+    align-items: center;
+    /* ikonlar aynı ufuk çizgisinde ortalandı */
+    pointer-events: none;
+    /* mouse'nin imleci ikonlara geldiğinde özel şekil almayacak */
+}
+
+section main .buttons {
+    margin-top: 20px;
+    /* butonların üstüne boşluk eklendi */
+}
+
+section main .buttons button {
+    margin: 0 5px;
+    /* butonun sağına soluna boşluk eklendi */
+    padding: 12px 20px;
+    /* butonun içerisinde boşluk oluşturuldu */
+    color: #555;
+    /* buton rengi */
+    font-size: 14px;
+    /* buton yazı boyutu */
+    border: none;
+    /* buton çizgisi sıfırlandı */
+    cursor: pointer;
+    /* cursor butonun üstüne gelince el simgesi oluşuyor */
+    border-radius: 4px;
+    /* buton köşeleri yarıçapı ayarlandı yuvarlandı */
+    border: 1px solid transparent;
+    /* buton dışına saydam buton çizgisi eklendi */
+    outline: none;
+    /* butonun en dış çizgisi yokedildi */
+}
+
+section main .buttons button:hover {
+    border: 1px solid #ccc;
+    /* cursor butonun üstüne gelince kenar çizgileri görünüyor */
+}
+
+section main .languages {
+    display: flex;
+    /* languages kısmındaki içerik yan yana sıralanabilir */
+    margin-top: 30px;
+    /* buton ile arasına üstünden boşluk eklendi */
+}
+
+section main .languages li {
+    list-style: none;
+    /* languages kısmındaki listelerin işaretleri silindi */
+    margin: 0 5px;
+    /* iki liste içeriği arası boşluk ayarlandı */
+    font-size: 13px;
+    /* içerik yazı boyutu */
+}
+
+section main .languages li a {
+    text-decoration: none;
+    /* içerik içindeki yazıların altyazıları sıfırlandı */
+    color: #1a0dab;
+    /* içeriğin yazı rengi ayarlandı */
+}
+
+section main .languages li a:hover {
+    text-decoration: underline;
+    /* languages kısmındaki liste elemanlarının üstüne mouse cursoru gelince alt çizgisi oluşuyor */
+}
+
+/******************************************** FOOTER **********************************************/
+
+section footer {
+    position: absolute;
+    /* footer için yer sabitlendi */
+    bottom: 0;
+    left: 0;
+    /* footerin konumu alttan ve soldan 0 olacak şekilde sabitlendi */
+    width: 100%;
+    /* footer genişliği tüm sayfa genişliği kadar ayarlandı */
+    background-color: #f2f2f2;
+    /* footer arkaplan rengi */
+}
+
+section footer .row {
+    padding: 15px 25px;
+    /* footer ile içeriği arasındaki boşluk ayarlandı */
+    border-top: 1px solid rgba(0,0,0,0.05); 
+    /* footer içindeki row'ların üst satır çizgileri ayarlandı */
+}
+
+section footer .row.row2 {
+    display: flex;
+    /* footer içindeki aynı anda row ve row2 klasında içerikler yanyana durabilir */
+    justify-content: space-between; 
+    /* bu bölümdeki iki adet liste başlığı araları boşluklu olcak şekilde sağa ve sola sabitlendi */
+}
+
+section footer .row.row2 ul {
+    display: flex;
+    /* footerdaki aynı anda row ve row2 klasının da içinde olan liste elemanları da yanyana durabilir */
+}
+
+section footer .row.row2 ul li {
+    list-style: none;
+    /* liste elemanlarının liste işaretleri silindi */
+}
+
+section footer .row.row2 ul li a {
+    text-decoration: none;
+    /* liste elemanları içindeki linklerin altyazıları silindi */
+    font-size: 14px;
+    /* linklerin yazı boyutu */
+    color: #5f6368;
+    /* linklerin rengi */
+    margin-right: 25px
+    /* linkler arası sağdan boşluk ayarı */
+}
+
+section footer .row.row2 ul li a:hover {
+    text-decoration: underline;
+    /* footerda soldaki linklere cursor gelince altyazı çıkar */
+}
+
+section footer .row.row2 ul:nth-child(2) li a {
+    /* burada yapılan değişiklikler footer içindeki hem row hem de row2 klasında olan başlıklarından ikincisinin içindeki liste elemanlarının linklerini ilgilendiriyor */
+    text-decoration: none;
+    /* altçizgi silindi */
+    font-size: 14px;
+    /* linklerin yazı boyutu */
+    color: #5f6368;
+    /* linklerin rengi */
+    margin-right: 0;
+    /* linklerin sağ boşluğu sıfırlandı */
+    margin-left: 25px;
+    /* linklere sol boşluk eklendi */
+    /* burada yapılan işlemdeki amaç; Footerın sol tarafındaki liste elemanları arasındaki boşluğu sağ taraftan verince ilk eleman ile sayfanın en solu arasında ekstra bir boşluk olmuyor. Sağdaki listede bunu yapabilmek için de aynı boşlukları soldan vermek gerekiyor ki listenin en sağındaki eleman ile sayfanın sağ tarafı arasında aynı şekilde boşluk oluşmasın */
+}
+
+section footer .row.row2 ul:nth-child(2) li a:hover {
+    text-decoration: underline;
+    /* footerda sağdaki linklere cursor gelince altyazı çıkar */
+}
