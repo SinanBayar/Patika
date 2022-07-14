@@ -56,3 +56,14 @@ setTimeout("showTime()",1000)
 // https://www.tugrayaldiz.com/javascript-ile-saat-yazdirmak/
 // https://www.javatpoint.com/javascript-date
 
+// ---------------------------------------------------------------------------------------------  //
+
+// Aşağıdaki versiyon da yukarıdaki kodun kısa hali diyebiliriz.
+
+// document.querySelector("#myName").innerHTML = prompt("Adınız Nedir?")
+// function showTime() {
+// const days = ["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]
+// document.querySelector("#myClock").innerHTML = ` ${new Date().toLocaleTimeString()} ${days[new Date().getDay()]} `
+// setTimeout("showTime()",1000)}
+
+// ---------------------------------------------------------------------------------------------  //
