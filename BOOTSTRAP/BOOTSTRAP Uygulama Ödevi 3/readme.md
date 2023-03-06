@@ -1,6 +1,6 @@
 #BOOTSTRAP UYGULAMA ÖDEVİ - 3
 
-[www.patika.dev](https://www.patika.dev/tr) için hazırlamış olduğum **BOOTSTRAP** dersinin üçüncü uygulama ödevidir.
+[www.patika.dev](https://www.patika.dev/tr) için hazırlamış olduğum **BOOTSTRAP** dersinin ikinci uygulama ödevidir.
 
 https://app.patika.dev/courses/bootstrap/odev3 'deki yönergelere göre açıklamalar eklenmiştir.
 
