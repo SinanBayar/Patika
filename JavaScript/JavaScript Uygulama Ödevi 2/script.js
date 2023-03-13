@@ -107,7 +107,7 @@ function localDOM(){
         listDOM.append(liDOM);                                      // bu liste elemanlarını listeye(ul) ekledik.
         liDOM.innerHTML = toDoList[index]                           // liste elemanlarının içeriğine toDoList'teki arrayler,
         liDOM.innerHTML += `${closeButton}`                         // ve kapama tuşu ekledik.
-         
+        liDOM.addEventListener("click", markElement);               // işaretleme eventi ekledik.
     })
 }
 
