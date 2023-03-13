@@ -1,4 +1,4 @@
-#JAVASCRIPT UYGULAMA ÖDEVİ - 3
+# JAVASCRIPT UYGULAMA ÖDEVİ - 3
 
 [www.patika.dev](https://www.patika.dev/tr) için hazırlamış olduğum **JavaScript** dersinin üçüncü uygulama ödevidir.
 
