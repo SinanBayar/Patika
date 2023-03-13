@@ -1,4 +1,4 @@
-#JAVASCRIPT UYGULAMA ÖDEVİ - 2
+# JAVASCRIPT UYGULAMA ÖDEVİ - 2
 
 [www.patika.dev](https://www.patika.dev/tr) için hazırlamış olduğum **JavaScript** dersinin ikinci uygulama ödevidir.
 
