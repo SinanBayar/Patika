@@ -269,7 +269,6 @@
 
 // ref: https://medium.com/quick-code/how-encapsulation-is-achieved-in-javascript-bac829deec96
 
-
 // ------------------------------- INHERITENCE ------------------------------- //
 
 // Inheritence ile amaçlanan kod tekrarını ve buna bağlı olarak da performans kayıplarını minimuma indirmektir. Örneğin aynı fonksiyonu içerisinde barındıran iki farklı nesne oluşturmak yerine bir class tanımlar ve bu fonksiyonu da bu class içerisinde tanımlarınız. Daha sonra bu class üzerinden nesnelerimizi oluşturunca nesneler otomatik olarak miras yoluyla bu fonksiyona sahip olurlar ve nesne içerisinde tekrar bu fonksiyonu tanımlamamız gerekmez.
@@ -466,5 +465,257 @@
 // }
 // console.log((new Elf("Sinan", "Balta")).attack()) // Balta ile saldır!
 
+// --------------------------------------------------------------------------- //
+
+// Inheritence Examples
+
+// Superclass
+// class Car {
+//   constructor(color, speed) {
+//     this._speed = speed
+//     this._color = color
+//   }
+// }
+
+// // Subclass
+// class BMW extends Car {
+//   constructor(color, speed, make) {
+//     super(color, speed)
+//     this._make = make
+//   }
+//   showInfo() {
+//     return `I'm ${this._make}, my color is ${this._color}, and my speed is ${this._speed}`
+//   }
+// }
+
+// // Subclass
+// class Toyota extends Car {
+//   constructor(color, speed, make) {
+//     super(color, speed)
+//     this._make = make
+//   }
+//   showInfo() {
+//     return `I'm ${this._make}, my color is ${this._color}, and my speed is ${this._speed}`
+//   }
+// }
+
+// // Subclass
+// class Bentley extends Car {
+//   constructor(color, speed, make) {
+//     super(color, speed)
+//     this._make = make
+//   }
+//   showInfo() {
+//     return `I'm ${this._make}, my color is ${this._color}, and my speed is ${this._speed}`
+//   }
+// }
+
+// const myCar = new BMW("green", "240km/h", "BMW")
+// const mySecondCar = new Toyota("blue", "180km/h", "Toyota")
+// const myThirdCar = new Bentley("red", "320km/h", "Bentley")
+
+// console.log(myCar.showInfo())
+// console.log(mySecondCar.showInfo())
+// console.log(myThirdCar.showInfo())
 
 // ------------------------------ POLYMORPHISM ------------------------------- //
+
+// https://medium.com/sessionstack-blog/how-javascript-works-3-types-of-polymorphism-f10ff4992be1
+
+// Inheritence Polymorphism:
+// Burada FirstClass'tan miras alınan add() metodu FirstClass'ten ectend olan diğer classların her biri için ayrı sonuçlar döndürüyor.
+// class FirstClass {
+//   add() {
+//     return "First Class";
+//   }
+// }
+
+// class SecondClass extends FirstClass {
+//   add() {
+//     return 30 + 40;
+//   }
+// }
+
+// class ThirdClass extends SecondClass {
+//   add() {
+//     return "Last morphed method!";
+//   }
+// }
+
+// const obj1 = new FirstClass();
+// const obj2 = new SecondClass();
+// const obj3 = new ThirdClass();
+
+// console.log(obj1.add());
+// console.log(obj2.add());
+// console.log(obj3.add());
+
+// Polymorphism with Functions and Objects:
+// class A {
+//   area(x,y) {
+//     return x*y
+//   }
+// }
+
+// class B extends A {
+//   area(a,b) {
+//     super.area(a,b)
+//     return a*b/2
+//   }
+// }
+
+// const rectangle = new A()
+// const triangle = new B()
+
+// console.log(rectangle.area(2,4))
+// console.log(triangle.area(2,4))
+
+// --------------------------------------------------------------------------- //
+
+// class Shape {
+//   area() {
+//     return 0;
+//   }
+//   perimeter() {
+//     return 0;
+//   }
+//   toString() {
+//     return Object.getPrototypeOf(this).constructor.name;
+//   }
+// }
+
+// class Circle extends Shape {
+//   constructor(r) {
+//     super();
+//     this.radius = r;
+//   }
+//   area() {
+//     return Math.PI * this.radius ** 2;
+//   }
+//   perimeter() {
+//     return Math.PI * this.radius * 2;
+//   }
+// }
+
+// class Rectangle extends Shape {
+//   constructor(w, h) {
+//     super();
+//     this.width = w;
+//     this.height = h;
+//   }
+//   area() {
+//     return this.width * this.height;
+//   }
+//   perimeter() {
+//     return 2 * (this.width + this.height);
+//   }
+// }
+
+// function cumulateShapes(shapes) {
+//   return shapes.reduce((sum, shape) => {
+//     if (shape instanceof Shape) {
+//       console.log(`Shape: ${shape.toString()} - area: ${shape.area()}`);
+//       console.log(`Shape: ${shape.toString()} - perimeter: ${shape.perimeter()}`);
+//       return sum + shape.area();
+//     }
+//     throw Error("Bad argument shape");
+//   }, 0);
+// }
+
+// const shapes = [new Circle(3), new Rectangle(2, 3)];
+// console.log(cumulateShapes(shapes));
+
+// ------------------------------ ABSTRACTION -------------------------------- //
+
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//     if (this.constructor.name === Person) {
+//       throw new Error("You can not create an instance for abstract class");
+//     }
+//   }
+//   info() {
+//     throw new Error("Added abstract method no implementation");
+//   }
+// }
+
+// const sinan = new Person("sinan");
+// // sinan.info = () => {
+// //     return "Polymorphism"
+// // }
+// console.log(sinan.info())
+
+// Typescript kullanarak abstract class yazılması:
+// abstract class Shape {
+//     name: string;
+//     constructor(name: string) {
+//         this.name = name
+//     }
+// abstract getArea(): number;
+// }
+
+// class Circle extends Shape {
+//     radius: number;
+//     constructor(name: string, radius: number) {
+//         super(name);
+//         this.radius = radius;
+//     }
+// 	getArea(): number {
+// 		return Math.PI * Math.pow(this.radius, 2)
+// 	}
+// }
+
+// class Rectangle extends Shape {
+// 	length: number;
+// 	width: number;
+// 	constructor(name: string, length: number, width: number) {
+// 		super(name);
+// 		this.length = length;
+// 		this.width = width;
+// 	}
+// }
+// Rectangle hata verir çünkü asbtract olmayan bir class abstract class'taki abstract methodu kalıtımla alamaz veya metodu polymorphism ile override etmelidir.
+// Typecsript'te abstract class native olarak tanımlanabilirken javascript için örnekteki gibi bir tanımlama yapılabilinir. Böylece abstract classtan yeni nesne oluşturulamaz.
+
+// Javascript kullanarak abstract class yazılması:
+// class Shape {
+//   constructor(name) {
+//     this.name = name;
+//     if (new.target === Shape) {
+//       throw Error("Cannot instantiate abstract class Shape directly");
+//     }
+//     if (this.getArea == undefined) {
+//       throw new Error("getArea method must be implemented");
+//     }
+//   }
+//   getArea() {
+//     throw new Error("getArea method must be implemented");
+//   }
+// }
+
+// class Circle extends Shape {
+//   constructor(name, radius) {
+//     super(name);
+//     this.radius = radius;
+//   }
+//   getArea() {
+//     return Math.PI * Math.pow(this.radius, 2);
+//   }
+// }
+
+// class Rectangle extends Shape {
+//   constructor(name, lenght, width) {
+//     super(name);
+//     this.lenght = lenght;
+//     this.width = width;
+//   }
+// }
+
+// const myShape = new Shape("My Shape") // Throws Error!
+
+// const smallRectangle = new Rectangle("Small Rectangle", 10, 2)
+// console.log(smallRectangle) // Throws Error!
+
+// const shortCircle = new Circle("Short Circle", 5)
+// console.log(shortCircle)
+// console.log(shortCircle.getArea())
